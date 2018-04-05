@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/introduction"
+            android:icon="@mipmap/introduction"
+            android:title="@string/intro" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/manifesto"
+            android:icon="@mipmap/manifesto"
+            android:title="@string/manifesto" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/achievements"
+            android:icon="@mipmap/achievements"
+            android:title="@string/achievements" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/news"
+            android:icon="@mipmap/news_events"
+            android:title="@string/news" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/upcoming"
+            android:icon="@mipmap/upcoming"
+            android:title="@string/upcoming" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/members"
+            android:icon="@mipmap/members"
+            android:title="@string/members" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/results"
+            android:icon="@mipmap/results"
+            android:title="@string/results" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/videos"
+            android:icon="@mipmap/videos"
+            android:title="@string/videos" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/photos"
+            android:icon="@mipmap/photos"
+            android:title="@string/photos" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/contact"
+            android:icon="@mipmap/contact"
+            android:title="@string/contact" />
+    </group>
+
+</menu>

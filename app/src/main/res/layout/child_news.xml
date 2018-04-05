@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp" android:elevation="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/loader"
+        android:layout_alignBottom="@+id/textDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageLogo"
+        android:layout_toRightOf="@+id/imageLogo"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:autoLink="web"
+        android:text="Data" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textData"
+        android:layout_toEndOf="@+id/imageLogo"
+        android:layout_toRightOf="@+id/imageLogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="Date" />
+
+    <ImageView
+        android:id="@+id/imageShare"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/imageLogo"
+        android:layout_alignEnd="@+id/textData"
+        android:background="@mipmap/forward"
+        android:layout_alignRight="@+id/textData" />
+
+</RelativeLayout>

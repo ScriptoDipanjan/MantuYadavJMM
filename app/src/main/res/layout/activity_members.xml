@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.scripto.mantuyadavjmm.Members">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tab_dialog"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/jmm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView7"
+        android:background="@drawable/dialog"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Want to be a member of\nJharkhand Mukti Morcha?" />
+
+        <Button
+            android:id="@+id/butReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:elevation="5dp"
+            android:background="@drawable/tab_dialog"
+            android:textColor="@color/white"
+            android:text="Register" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Already a member?" />
+
+        <Button
+            android:id="@+id/butSign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:elevation="5dp"
+            android:background="@drawable/tab_dialog"
+            android:textColor="@color/white"
+            android:text="Sign in" />
+    </LinearLayout>
+
+</RelativeLayout>

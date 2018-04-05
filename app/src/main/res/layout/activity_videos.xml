@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.scripto.mantuyadavjmm.Videos">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/but"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tab_dialog"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/layYT"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/select_dialog">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                app:srcCompat="@mipmap/yt"
+                android:id="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/butYT"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView5"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="YouTube"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layFB"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/tab_dialog"
+            android:layout_weight= "1">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                app:srcCompat="@mipmap/fb" />
+
+            <TextView
+                android:id="@+id/butFB"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="Facebook"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/but"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none"
+        android:id="@+id/scrollVid">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linVid" >
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/butTop"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/top"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/errorVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff3535"
+        android:textSize="20sp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
